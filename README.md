@@ -27,39 +27,6 @@ Dados provenientes do sistema acadêmico, **anonimizados** para preservar a priv
 
 **Variáveis principais:** IRA, porcentagem concluída, ano de ingresso, status, tempo de evasão, indicadores socioeconômicos (PPI, renda, escola pública, PCD).
 
-## Instalação
-
-```bash
-# Clone o repositório
-git clone <url-do-repositorio>
-cd analise_desempenho_curso
-
-# Crie um ambiente virtual (opcional, mas recomendado)
-python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
-
-# Instale as dependências
-pip install -r requirements.txt
-```
-
-## Uso
-
-### 1. Processar Dados
-
-```bash
-python preparar_bases.py
-```
-
-### 2. Executar Análises
-
-Abra e execute os notebooks Jupyter na ordem:
-
-1. **analise_exploratoria.ipynb**: Perfil demográfico, distribuição de gênero, tipos de ingresso, indicadores socioeconômicos
-2. **analise_desempenho_evasao.ipynb**: IRA por coorte, correlações, motivos e tempo de evasão
-3. **analise_clustering.ipynb**: K-Means (k=4), PCA, perfis de clusters
-4. **modelagem_preditiva.ipynb**: Regressão Logística e Random Forest para predição de evasão
-
-
 ## Tecnologias
 
 - Python 3.8+
